@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(86, 248, 108);
+}
+
+.one {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+li {
+    list-style-type: none;
+}
