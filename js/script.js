@@ -19,14 +19,17 @@ let obj = {};
 });
 
 function a () {
-    if(localStorage.obj){
+    if(localStorage.obj !== null){
        let allInput = format.querySelectorAll('input');
        let b = JSON.parse(localStorage.obj);
     
         for(let elem of allInput){
            elem.value = b[elem.name];
+     
 
         }
+    }else  {
+          alert('nothing');
     }
 }
 a();
