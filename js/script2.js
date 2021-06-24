@@ -4,18 +4,21 @@
  document.querySelector('.ls').onclick = () => {
       let res = localStorage.getItem('obj');
      let  b = JSON.parse(res);
-      let out = '';
+      let ul = document.querySelector('.ul');
    
 
        if(res){
 
        
         for(let key in b){
-            out += `${key} : ${b[key]}<br>`;
+          let li = document.createElement('li');
+            li.innerHTML = `${key} : ${b[key]}`;
+            li.style.fontSize = '30px';
+           ul.prepend(li);
         }
-         localStorage.clear();
-      document.querySelector('.li').innerHTML = out;
-      document.querySelector('.li').style.fontSize = '30px';
+     //    localStorage.clear();
+    
+      
        }else{
            alert('nothing to see');
        }
