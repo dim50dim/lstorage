@@ -6,10 +6,8 @@
      let  b = JSON.parse(res);
       let ul = document.querySelector('.ul');
    
-
        if(res){
 
-       
         for(let key in b){
           let li = document.createElement('li');
             li.innerHTML = `${key} : ${b[key]}`;
@@ -17,8 +15,6 @@
            ul.prepend(li);
         }
      //    localStorage.clear();
-    
-      
        }else{
            alert('nothing to see');
        }

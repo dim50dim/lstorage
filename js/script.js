@@ -15,7 +15,7 @@ let obj = {};
 
 function a () {
     
-       let allInput = format.querySelectorAll('input');
+       let allInput = format.querySelectorAll('input,textarea,select');
        let b = JSON.parse(localStorage.obj);
     
         for(let elem of allInput){
